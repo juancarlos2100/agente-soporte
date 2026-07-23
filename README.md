@@ -6,7 +6,7 @@ El sistema funciona completamente en entorno local, sin depender de servicios ex
 
 # Características
 
-## 🛠 Soporte Técnico Inteligente
+## Soporte Técnico Inteligente
 
 - Consulta procedimientos operativos documentados.
 - Respuesta basada exclusivamente en documentación interna.
@@ -89,15 +89,11 @@ Formatos compatibles:
 
 InfraBot fue diseñado bajo un modelo de privilegios seguros:
 
-✅ Auditorías de solo lectura
-
-✅ No ejecuta cambios sobre infraestructura
-
-✅ No posee privilegios sudo
-
-✅ Evidencias privilegiadas requieren validación humana
-
-✅ Implementación completamente local
+Auditorías de solo lectura
+No ejecuta cambios sobre infraestructura
+No posee privilegios sudo
+Evidencias privilegiadas requieren validación humana
+Implementación completamente local
 
 ---
 
@@ -208,7 +204,7 @@ infra-lab/
 
 ---
 
-# 🌐 Interfaz Web
+# Interfaz Web
 
 InfraBot incluye una interfaz web basada en Gradio.
 
