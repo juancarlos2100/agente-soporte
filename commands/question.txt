@@ -1,0 +1,1 @@
+¿Qué hacer si el lector RFID entra en modo Standby y deja de escanear?

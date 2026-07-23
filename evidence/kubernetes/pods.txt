@@ -1,0 +1,13 @@
+NAME                                                 READY   STATUS      RESTARTS      AGE
+ess-deployment-markers-post-ll58g                    0/1     Completed   0             9d
+ess-deployment-markers-pre-87lwq                     0/1     Completed   0             9d
+ess-element-admin-7f49f84f5c-scdbd                   1/1     Running     1 (11d ago)   19d
+ess-element-web-6444895d68-h47zv                     1/1     Running     0             9d
+ess-haproxy-6f4fc57b8b-xcqr7                         1/1     Running     0             9d
+ess-init-secrets-gfg8w                               0/1     Completed   0             9d
+ess-matrix-authentication-service-6cb4687bcc-wp22c   1/1     Running     0             9d
+ess-postgres-0                                       3/3     Running     3 (11d ago)   12d
+ess-syn2mas-chczf                                    0/1     Unknown     0             12d
+ess-syn2mas-retry-20260713-hllhm                     0/1     Completed   0             9d
+ess-synapse-check-config-587rx                       0/1     Completed   0             9d
+ess-synapse-main-0                                   1/1     Running     0             9d

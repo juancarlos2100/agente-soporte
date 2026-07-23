@@ -1,0 +1,23 @@
+NAME: ess
+LAST DEPLOYED: Mon Jul 13 18:25:08 2026
+NAMESPACE: ess
+STATUS: deployed
+REVISION: 13
+TEST SUITE: None
+NOTES:
+ESS Community 26.6.3-dev
+
+You are using ESS Community which is tailored to small-/mid-scale, non-commercial community use cases. If you're looking for a professional Matrix backend that is designed to support enterprise requirements and certifications, take a look at ESS Pro https://element.io/server-suite.
+
+ESS Pro provides Long-Term Support (LTS) releases, automatic scaling (horizontal and vertical), Advanced Identity and Access Management (Advanced IAM) to manage users and Spaces permissions, and more.
+
+Feel free to join our Matrix room to discuss at https://matrix.to/#/#ess-community:element.io.
+After initial deployment:
+- To create your first user, please run the following command:
+kubectl exec -n ess -it deployment/ess-matrix-authentication-service -- mas-cli manage register-user
+- To successfully federate, make sure that the well-known delegation works properly using the matrix-federation-tester: https://federationtester.matrix.org/#matrix.implemx.com
+
+---
+- Element Admin is available at: https://admin.implemx.com
+- Element Web is available at: https://element.implemx.com
+- Users can manage their accounts at: https://auth.implemx.com

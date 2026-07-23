@@ -1,0 +1,7 @@
+NAME                          STATUS     COMPLETIONS   DURATION   AGE
+ess-deployment-markers-post   Complete   1/1           23s        9d
+ess-deployment-markers-pre    Complete   1/1           18s        9d
+ess-init-secrets              Complete   1/1           19s        9d
+ess-syn2mas                   Failed     0/1           12d        12d
+ess-syn2mas-retry-20260713    Complete   1/1           100s       9d
+ess-synapse-check-config      Complete   1/1           69s        9d

@@ -1,0 +1,93 @@
+MATCH_CONFIDENCE=HIGH
+
+=== CANDIDATO PRINCIPAL (Fuente: messeges.md, Score: 39.5) ===
+## 8. Suspensión o modo Standby de la pistola RFID
+
+TAGS:
+rfid
+pistola
+distintivo
+tid
+lector
+vinculacion
+
+CONTENIDO:
+
+### Síntoma
+El lector RFID deja de responder o escanear tras varios intentos fallidos.
+
+### Causa conocida
+Después de varios intentos fallidos de escaneo, la pistola RFID entra automáticamente en modo **Standby** como medida de ahorro de energía.
+
+### Acción recomendada
+Encender nuevamente el dispositivo (lector RFID) físicamente para reanudar las operaciones de escaneo y reestablecer el enlace.
+
+---
+
+# Lista rápida de diagnóstico
+
+| Síntoma | Validación inicial |
+|----------|----------|
+| Licencia no aparece en la app | Generar Excel + foto de casco con holograma |
+| Carta consentimiento | Verificar que sea original impresa |
+| Nacionalidad extranjera incorrecta | Corresponde a servicios externos; no bloquea el registro |
+| Conexión inestable o lenta | Validar velocidad de internet |
+| No tienes conexión a internet o tus datos se han agotado | Validar conectividad y velocidad de red |
+| Error al vincular RFID | Verificar asignación del distintivo al módulo |
+| App falla con red estable | Forzar detención + Borrar caché y datos + Reiniciar sesión |
+| Pistola RFID deja de escanear (Standby) | Encender físicamente el lector RFID de nuevo |
+
+--- EVIDENCIA SECUNDARIA 1 (Fuente: messeges.md, Score: 20.5) ---
+## 6. Error de vinculación de RFID
+
+TAGS:
+rfid
+pistola
+distintivo
+tid
+lector
+vinculacion
+
+CONTENIDO:
+
+### Síntoma
+Durante el escaneo del distintivo aparece el mensaje:
+
+> Error al vincular RFID, el RFID no existe o no está disponible para vinculación.
+
+Además se muestra:
+
+> TID FÍSICO LEÍDO:
+
+### Causa conocida
+El distintivo RFID no ha sido asignado al módulo correspondiente.
+
+### Validación
+Verificar la asignación del distintivo dentro del sistema de administración correspondiente.
+
+### Acción recomendada
+Confirmar que el RFID se encuentre registrado y asignado al módulo correcto antes de intentar nuevamente la vinculación.
+
+--- EVIDENCIA SECUNDARIA 2 (Fuente: pasos_configuracion_cascos.md, Score: 14.5) ---
+## Fase 4: Vinculación y Configuración del Lector RF88
+
+TAGS:
+configuracion
+pasos
+pm95
+cascos
+instalacion
+
+CONTENIDO:
+1. Encender el lector **RF88**.
+2. En el **PM95**, activar el **Bluetooth**.
+3. Abrir la aplicación **RFID Control V2**.
+4. Dar tap en **Search** (Buscar).
+5. Ubicar y seleccionar el dispositivo **RF88** correspondiente a su número de serie.
+6. Esperar a que se complete la conexión.
+7. Aplicar la siguiente configuración técnica:
+   - Activación: **Continuous mode** = Activado.
+   - Tiempo de suspensión: **Suspend timeout** = `0` (cero).
+   - Confirmación: Dar tap en **Apply**.
+   - Perfil de usuario: Seleccionar **Perfil** y activar **User defined**.
+
